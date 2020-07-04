@@ -1,11 +1,11 @@
-package com.sbmongodbexp.service;
+package com.techno.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.sbmongodbexp.model.Mobile;
-import com.sbmongodbexp.repository.MobileRepository;
+import com.techno.model.Mobile;
+import com.techno.repository.MobileRepository;
 
 @Service
 public class MobileService {
