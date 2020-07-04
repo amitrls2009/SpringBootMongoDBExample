@@ -1,4 +1,4 @@
-package com.sbmongodbexp.controller;
+package com.techno.controller;
 
 import java.util.List;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sbmongodbexp.model.Person;
-import com.sbmongodbexp.service.PersonService;
+import com.techno.model.Person;
+import com.techno.service.PersonService;
 
 @RestController
 @RequestMapping("/api/mongodbperson")

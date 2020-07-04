@@ -1,16 +1,31 @@
-package com.sbmongodbexp.model;
+package com.techno.domain;
 
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.Field;
 
-@Document("USERS")
-public class User {
-    
-	@Id
-	@Field("USER_ID")
+public class UserDetails {
+
 	private int userId;
+	/**
+	 * @param userId
+	 * @param userName
+	 * @param teamName
+	 * @param address
+	 */
+	public UserDetails(int userId, String userName, String teamName, String address) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.teamName = teamName;
+		this.address = address;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "UserDetails [userId=" + userId + ", userName=" + userName + ", teamName=" + teamName + ", address="
+				+ address + "]";
+	}
 	/**
 	 * @return the userId
 	 */
@@ -59,37 +74,7 @@ public class User {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	@Field("USER_NAME")
 	private String userName;
-	@Field("TEAM_NAME")
 	private String teamName;
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "User [userId=" + userId + ", userName=" + userName + ", teamName=" + teamName + ", address=" + address
-				+ "]";
-	}
-	/**
-	 * @param userId
-	 * @param userName
-	 * @param teamName
-	 * @param address
-	 */
-	public User(int userId, String userName, String teamName, String address) {
-		super();
-		this.userId = userId;
-		this.userName = userName;
-		this.teamName = teamName;
-		this.address = address;
-	}
-	/**
-	 * 
-	 */
-	public User() {
-		super();
-	}
-	@Field("ADDRESS")
 	private String address;
 }

@@ -1,4 +1,4 @@
-package com.sbmongodbexp.repository;
+package com.techno.repository;
 
 
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
-import com.sbmongodbexp.model.User;
+import com.techno.model.User;
 
 /*
 Keyword	:

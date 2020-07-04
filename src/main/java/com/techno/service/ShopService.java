@@ -1,4 +1,4 @@
-package com.sbmongodbexp.service;
+package com.techno.service;
 
 import java.util.List;
 
@@ -6,13 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.stereotype.Service;
 
-
-import com.sbmongodbexp.model.ShopDetails;
-
-import com.sbmongodbexp.repository.ShopRepository;
+import com.techno.model.ShopDetails;
+import com.techno.repository.ShopRepository;
 
 @Service
-@EnableMongoRepositories(basePackageClasses = com.sbmongodbexp.repository.ShopRepository.class)
+@EnableMongoRepositories(basePackageClasses = com.techno.repository.ShopRepository.class)
 public class ShopService {
 
 	@Autowired

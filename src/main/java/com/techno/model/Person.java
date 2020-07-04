@@ -1,4 +1,4 @@
-package com.sbmongodbexp.model;
+package com.techno.model;
 
 import java.util.List;
 

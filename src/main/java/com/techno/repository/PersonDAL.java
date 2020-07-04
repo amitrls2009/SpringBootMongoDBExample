@@ -1,10 +1,10 @@
-package com.sbmongodbexp.repository;
+package com.techno.repository;
 
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.sbmongodbexp.model.Person;
+import com.techno.model.Person;
 
 
 public interface PersonDAL {

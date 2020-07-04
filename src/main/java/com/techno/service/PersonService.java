@@ -1,11 +1,12 @@
-package com.sbmongodbexp.service;
+package com.techno.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.sbmongodbexp.model.Person;
-import com.sbmongodbexp.repository.PersonDAL;
+
+import com.techno.model.Person;
+import com.techno.repository.PersonDAL;
 
 @Service
 public class PersonService {

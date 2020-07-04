@@ -1,8 +1,8 @@
-package com.sbmongodbexp.repository;
+package com.techno.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.sbmongodbexp.model.ShopDetails;
+import com.techno.model.ShopDetails;
 
 public interface ShopRepository extends MongoRepository<ShopDetails, Integer>{
 

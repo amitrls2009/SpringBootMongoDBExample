@@ -1,4 +1,4 @@
-package com.sbmongodbexp.repository;
+package com.techno.repository;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Repository;
 
-import com.sbmongodbexp.model.Person;
+import com.techno.model.Person;
 
 @Repository
 public class PersonDALImpl implements PersonDAL {

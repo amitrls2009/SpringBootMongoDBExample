@@ -1,4 +1,4 @@
-package com.sbmongodbexp.controller;
+package com.techno.controller;
 
 import java.util.List;
 
@@ -16,8 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.sbmongodbexp.model.User;
-import com.sbmongodbexp.service.UserService;
+
+import com.techno.model.User;
+import com.techno.service.UserService;
 
 @RestController
 @RequestMapping("/api/mongodbuser")

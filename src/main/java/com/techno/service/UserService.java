@@ -1,4 +1,4 @@
-package com.sbmongodbexp.service;
+package com.techno.service;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +9,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.stereotype.Service;
 
-import com.sbmongodbexp.model.User;
-import com.sbmongodbexp.repository.UserRepository;
+import com.techno.model.User;
+import com.techno.repository.UserRepository;
 
 @EnableMongoRepositories(basePackages = "com.sbmongodbexp.repository")
 @Service
