@@ -1,0 +1,220 @@
+URL :http://localhost:8099/mobiles
+
+
+show dbs
+
+use mymongodb
+show dbs
+db.getName()
+db.getCollectionNames()
+db.createCollection("Students")
+db.getCollection("STUDENTS").insert(
+this.userId = userId;
+		this.userName = userName;
+		this.teamName = teamName;
+		this.address = address;
+		
+[
+{
+ "userId":"1",
+ "userName":"Amit Kumar",
+ "teamName":"Cricket",
+ "address":"SahuNagar",
+},
+{
+ "userId":"2",
+ "userName":"Vikas Kumar",
+ "teamName":"Cricket",
+ "address":"SahuNagar",
+},
+{
+ "userId":"3",
+ "userName":"Saatvik Kumar",
+ "teamName":"Khokho",
+ "address":"Pune",
+},
+{
+ "userId":"4",
+ "userName":"Suruchi",
+ "teamName":"Basketball",
+ "address":"Pune",
+},
+{
+ "userId":"5",
+ "userName":"Rupesh",
+ "teamName":"Tenis",
+ "address":"Chinchwad",
+}
+
+]
+
+
+[
+ {
+  "NAME":"Arnica",
+  "ROLL_NO":"1",
+  "SUBJECT":"Big Data"   
+ },
+ {
+  "NAME":"Avinash",
+  "ROLL_NO":"2",
+  "SUBJECT":"Java"   
+ },
+ {
+  "NAME":"Arvind",
+  "ROLL_NO":"3",
+  "SUBJECT":"DotNet"   
+ },
+ {
+  "NAME":"Heram",
+  "ROLL_NO":"4",
+  "SUBJECT":"Database"   
+ },
+ {
+  "NAME":"Swati",
+  "ROLL_NO":"5",
+  "SUBJECT":"Bridgger"   
+ }        
+]
+)
+db.getCollection("Students").find()
+
+[
+   {
+        "personId": 1,
+        "personName": "Bakery",
+        "address": "SahuNagar",
+		"age": "SahuNagar",
+		"favoriteBooks": [{"Java"},{"DotNet"}]
+    },
+	{
+        "personId": 2,
+        "personName": "Bakery",
+        "address": "SahuNagar",
+		"age": "SahuNagar",
+		"favoriteBooks": [{"Java"},{"DotNet"}]
+    }
+]
+
+
+[
+    {
+        "shopId": 1,
+        "shopName": "Bakery",
+        "shopLocation": "SahuNagar"
+    },
+    {
+        "shopId": 2,
+        "shopName": "Grocery",
+        "shopLocation": "Pimpri"
+    },
+    {
+        "shopId": 3,
+        "shopName": "Dwarka",
+        "shopLocation": "Vimannagar"
+    },
+    {
+        "shopId": 4,
+        "shopName": "BigBazaar",
+        "shopLocation": "Chinchwad"
+    },
+    {
+        "shopId": 5,
+        "shopName": "Dmart",
+        "shopLocation": "Thergaon"
+    },
+    {
+        "shopId": 6,
+        "shopName": "Central",
+        "shopLocation": "Kharadi"
+    }
+]
+
+
+[
+   {
+        "mobileId": "SAM001",
+        "brand": "SAMSUNG",
+        "seller": "SahuNagar",
+		"price": 17499,
+		"discount":5,
+        "frontCamera": "32MP",
+        "rearCamera": "64MP",
+		"screenSize": "6.4inch",
+		"memory": "6GB",
+        "storage": "128GB",
+        "battery": "6000mAH"		
+		
+    }
+	
+]
+
+
+
+
+
+[
+   {
+        "personId": 1,
+        "personName": "Avinsh",
+        "address": "SahuNagar",
+		"age": "30",
+		"favoriteBooks": ["Java","DotNet"]
+    },
+	{
+        "personId": 2,
+        "personName": "Suraj",
+        "address": "chinchwad",
+		"age": "23",
+		"favoriteBooks": ["Computer","Cumputer","Computer"]
+    },
+    {
+        "personId": 3,
+        "personName": "Saket",
+        "address": "ShivajiNagar",
+		"age": "21",
+		"favoriteBooks": ["Programming Language","Programming Language"]
+    },
+     {
+        "personId": 4,
+        "personName": "Sabnam",
+        "address": "MG Raod",
+		"age": "19",
+		"favoriteBooks": ["C","C++","C","C++"]
+    },
+    {
+        "personId": 5,
+        "personName": "Sultan",
+        "address": "Panshet",
+		"age": "16",
+		"favoriteBooks": ["CO","SQL","DB","MEAN"]
+    }
+	{
+        "personId": 6,
+        "personName": "Sumit",
+        "address": "Singhad",
+		"age": "13",
+		"favoriteBooks": ["Java","SQL","DB","MEAN"]
+    }
+]
+
+
+
+--------------------------------
+Document : MOBILES
+
+Field:
+ * MobileId
+ * Brands
+ * Price
+ * Discount
+ * Seller
+ * Front Camera
+ * Rear Camera
+ * Screen Size
+ * Memory
+ * Storage
+ * Battery
+ * 
+
+
