@@ -133,17 +133,31 @@ db.getCollection("Students").find()
 
 [
    {
-        "mobileId": "SAM001",
+        "mobileId": "M40",
         "brand": "SAMSUNG",
-        "seller": "SahuNagar",
-		"price": 17499,
-		"discount":5,
-        "frontCamera": "32MP",
-        "rearCamera": "64MP",
-		"screenSize": "6.4inch",
+        "seller": "STPL Exclusive Online",
+		"price": 15999,
+		"discount":10,
+        "frontCamera": "16MP",
+        "rearCamera": "32MP",
+		"screenSize": "6.3inch",
 		"memory": "6GB",
         "storage": "128GB",
-        "battery": "6000mAH"		
+        "battery": "3500mAH"		
+		
+    },
+    {
+        "mobileId": "X2",
+        "brand": "OPPO",
+        "seller": "STPL Exclusive Online",
+		"price": 64990,
+		"discount":8,
+        "frontCamera": "12MP",
+        "rearCamera": "48MP",
+		"screenSize": "6.7inch",
+		"memory": "12GB",
+        "storage": "256GB",
+        "battery": "4260mAH"		
 		
     }
 	
@@ -217,4 +231,85 @@ Field:
  * Battery
  * 
 
-
+-----------------------
+Data :-
+[
+    {
+        "mobileId": "SAM001",
+        "brand": "SAMSUNG",
+        "seller": "SahuNagar",
+        "price": 17499,
+        "discount": 5,
+        "frontCamera": "32MP",
+        "rearCamera": "64MP",
+        "screenSize": "6.4inch",
+        "memory": "6GB",
+        "storage": "128GB",
+        "battery": "6000mAH"
+    },
+    {
+        "mobileId": "RealMe XT",
+        "brand": "RealMe",
+        "seller": "Appario Retail",
+        "price": 12499,
+        "discount": 7,
+        "frontCamera": "32MP",
+        "rearCamera": "64MP",
+        "screenSize": "6.4inch",
+        "memory": "4GB",
+        "storage": "64GB",
+        "battery": "4000mAH"
+    },
+    {
+        "mobileId": "iphone7",
+        "brand": "Apple",
+        "seller": " Appario Retail Private Ltd",
+        "price": 24999,
+        "discount": 6,
+        "frontCamera": "7MP",
+        "rearCamera": "12MP",
+        "screenSize": "4.7inch",
+        "memory": "2GB",
+        "storage": "32GB",
+        "battery": "3000mAH"
+    },
+    {
+        "mobileId": "U10",
+        "brand": "Vivo",
+        "seller": " Appario Retail Private Ltd",
+        "price": 10990,
+        "discount": 8,
+        "frontCamera": "7MP",
+        "rearCamera": "12MP",
+        "screenSize": "6.35inch",
+        "memory": "3GB",
+        "storage": "32GB",
+        "battery": "5000mAH"
+    },
+    {
+        "mobileId": "M40",
+        "brand": "SAMSUNG",
+        "seller": "STPL Exclusive Online",
+        "price": 15999,
+        "discount": 10,
+        "frontCamera": "16MP",
+        "rearCamera": "32MP",
+        "screenSize": "6.3inch",
+        "memory": "6GB",
+        "storage": "128GB",
+        "battery": "3500mAH"
+    },
+    {
+        "mobileId": "X2",
+        "brand": "OPPO",
+        "seller": "STPL Exclusive Online",
+        "price": 64990,
+        "discount": 8,
+        "frontCamera": "12MP",
+        "rearCamera": "48MP",
+        "screenSize": "6.7inch",
+        "memory": "12GB",
+        "storage": "256GB",
+        "battery": "4260mAH"
+    }
+]
