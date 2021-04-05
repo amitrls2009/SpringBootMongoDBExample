@@ -1,6 +1,7 @@
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
+/bin/
+!.mvn/wrapper/
 !**/src/main/**
 !**/src/test/**
 
@@ -8,7 +9,6 @@ target/
 .apt_generated
 .classpath
 .factorypath
-.project
 .settings
 .springBeans
 .sts4-cache

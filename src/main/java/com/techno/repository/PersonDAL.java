@@ -30,4 +30,8 @@ public interface PersonDAL {
 	
 	long countPerson();
 
+	List<Person> getAllPersonProjected();
+
+	List<Person> getAllPersonAggregated();
+
 }

@@ -52,4 +52,13 @@ public class PersonService {
 		return personDAL.getAllPersonPaginated(pageNumber, pageSize);
 	}
 
+	public List<Person> getAllPersonProjected() {	    
+		return personDAL.getAllPersonProjected();
+	}
+
+	public List<Person> getAllPersonAggregated() {
+		
+		return personDAL.getAllPersonAggregated();
+	}
+
 }

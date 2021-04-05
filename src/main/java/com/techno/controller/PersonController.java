@@ -45,6 +45,18 @@ public class PersonController {
 		List<Person> persons = personService.getAllPerson();
 		return new ResponseEntity<List<Person>>(persons, HttpStatus.OK);
 	}
+	
+	@GetMapping("/getPersonsProjected")
+	ResponseEntity<List<Person>> getAllPersonProjected() {
+		List<Person> persons = personService.getAllPersonProjected();
+		return new ResponseEntity<List<Person>>(persons, HttpStatus.OK);
+	}
+	
+	@GetMapping("/getPersonsAggr")
+	ResponseEntity<List<Person>> getAllPersonAggregated() {
+		List<Person> persons = personService.getAllPersonAggregated();
+		return new ResponseEntity<List<Person>>(persons, HttpStatus.OK);
+	}
 
 	@DeleteMapping("/deletePerson")
 	ResponseEntity<String> deletePerson(@RequestBody Person person) {

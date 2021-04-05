@@ -4,7 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
+import org.springframework.data.mongodb.core.aggregation.AggregationResults;
+import org.springframework.data.mongodb.core.aggregation.ProjectionOperation;
+import org.springframework.data.mongodb.core.aggregation.SortOperation;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
@@ -95,4 +101,31 @@ public class PersonDALImpl implements PersonDAL {
 		return mongoTemplate.getCollection("person").count();
 	}
 
+	//Projection
+	@Override
+	public List<Person> getAllPersonProjected() {
+		Query query = new Query();
+		query.fields().exclude("favoriteBooks");
+		return mongoTemplate.find(query, Person.class);
+	}
+
+	//Aggregation
+	@Override
+	public List<Person> getAllPersonAggregated() {		
+		ProjectionOperation projectStage = Aggregation.project("personName", "age");
+		Aggregation aggregation  = Aggregation.newAggregation(projectStage);
+		AggregationResults<Person> output  = mongoTemplate.aggregate(aggregation,"person", Person.class);
+		return output.getMappedResults();
+	}
+	
+	/*
+	 * GroupOperation groupByStateAndSumPop = group("state")
+	 * .sum("pop").as("statePop"); MatchOperation filterStates = match(new
+	 * Criteria("statePop").gt(10000000)); SortOperation sortByPopDesc =
+	 * sort(Sort.by(Direction.DESC, "statePop"));
+	 * 
+	 * Aggregation aggregation = newAggregation( groupByStateAndSumPop,
+	 * filterStates, sortByPopDesc); AggregationResults<StatePopulation> result =
+	 * mongoTemplate.aggregate( aggregation, "zips", StatePopulation.class);
+	 */
 }

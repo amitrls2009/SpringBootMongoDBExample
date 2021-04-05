@@ -42,7 +42,7 @@ public class UserService {
 	}
 
 	public Page<User> getPaginatedUsers(int pageNo, int pageSize) {
-		Pageable paging = PageRequest.of(pageNo, pageSize);
+		Pageable paging = PageRequest.of(pageNo, pageSize);	
 		return userRepository.findAll(paging);
 
 	}
